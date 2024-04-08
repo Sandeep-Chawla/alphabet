@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head class="h-64">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex | APEX ALPHABET</title>
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,100,0,0"
+    />
+    <style>
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="bg-black text-white h-fit items-center md:h-8 w-full flex flex-col md:flex-row justify-around">
+        <div class="flex h-full">
+          <div class="bg-[#947851] mx-[2px] w-10 text-center p-1 h-full">
+            <i class="fa-brands fa-facebook"></i>
+          </div>
+          <div class="bg-[#947851] mx-[2px] w-10 text-center p-1 h-full">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="bg-[#947851] mx-[2px] w-10 text-center p-1 h-full">
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3">
+          <div>
+            <i class="fa-regular fa-envelope"></i
+            ><span class="mx-1"> info@apexindia.in</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i
+            ><span class="mx-1">1800 200 3676</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-right-to-bracket"></i
+            ><span class="mx-1 ">Login</span>
+          </div>
+        </div>
+      </div>
+      <nav class="flex items-center flex-col md:flex-row justify-center h-fit md:h-16 w-full">
+        <div class="mx-auto my-4 items-center flex justify-between w-[95vw] md:hidden">
+            <img class="w-16" src="https://www.theapexgroup.in/images/apex.png" alt=""/>
+            <div class="text-2xl mr-8">
+                <!-- menu button  -->
+                <i id="menu" class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div id="phonemenu"class="w-fit transition-[height] duration-500 h-0 md:h-fit hidden md:block">
+          <ul class="space-y-3 md:space-y-0 md:space-x-5 lg:space-x-11 flex mb-4 md:mb-0 flex-col md:flex-row items-center font-semibold text-sm">
+            <li>Home</li>
+            <li id="about" class="flex items-center flex-col md:flex-row relative">
+              <span>
+              About Us<i class="ml-2 fa-solid fa-sort-down"></i>
+              </span>
+              <div id="about-menu" class="hidden rounded-sm md:text-left text-center md:absolute -left-3 py-2 z-10 w-48 bg-white top-10"> <ul>
+                <li class="px-6 md:pt-4 md:pb-1 py-1 hover:bg-[#f8f9fa]">Why Us</li>
+                <li class="px-6 md:pt-4 md:pb-1 py-1 hover:bg-[#f8f9fa]">Quality Policy</li>
+                <li class="px-6 md:pt-4 md:pb-1 py-1 hover:bg-[#f8f9fa]">CMD message</li>
+                <li class="px-6 md:pt-4 md:pb-1 py-1 hover:bg-[#f8f9fa]">Our Team</li>
+              </ul></div>
+            </li>
+            <li id="drio" class="flex items-center flex-col md:flex-row relative">
+              <span>
+                D'Rio<i class="ml-2 fa-solid fa-sort-down"></i>
+              </span>
+              <div id="drio-menu" class="hidden rounded-sm md:text-left text-center md:absolute -left-3 py-2 z-10 w-48 bg-white top-10"> <ul>
+                <li class="px-6 md:pt-4 md:pb-1 py-1 hover:bg-[#f8f9fa]">D'Rio</li>
+                <li class="px-6 md:pt-4 md:pb-1 py-1 hover:bg-[#f8f9fa]">Price Lift</li>
+                <li class="px-6 md:pt-4 md:pb-1 py-1 hover:bg-[#f8f9fa]">Payment plan</li>
+                <li class="px-6 md:pt-4 md:pb-1 py-1 hover:bg-[#f8f9fa]">Construction Progress</li>
+              </ul></div>
+            </li>
+            <li class="hidden md:block">
+              <img
+                class="w-16"
+                src="https://www.theapexgroup.in/images/apex.png"
+                alt=""
+              />
+            </li>
+            <li class="flex items-center">
+              Projects<i class="ml-2 fa-solid fa-sort-down"></i>
+            </li>
+            <li>NRIs</li>
+            <li>Career</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </nav>
+      <div
+        class="bg-[url(https://www.theapexgroup.in/images/terraceBg.jpg)] h-[45vh] w-full flex text-white items-center justify-center font-semibold text-center"
+      >
+        <div id="home" class="w-fit">
+          <h1 id="down" class="text-4xl my-4">APEX ALPHABET</h1>
+          <div id="up" >
+              <h2 class="text-2xl">Sports City, Techzone 4</h2>
+              <h3 class="text-sm text-[#bd9020]">RERA Reg. No. UPRERAPRJ7818</h3>
+            </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="">
+        <div class="mx-auto w-fit h-fit">
+          <img
+            class="m-3  w-[90vw] lg:w-[80vw] object-cover h-[45vh] md:h-screen"
+            src="https://www.theapexgroup.in/images/alphabet/apex-alphabet-1.jpg"
+            alt="img1"
+          />
+        </div>
+        <div
+          class="h-[20vh] m-2 justify-between flex mx-auto  items-center  w-[90vw] lg:w-[80vw]"
+        >
+          <img
+            class="h-full w-[23%]"
+            src="https://www.theapexgroup.in/images/alphabet/apex-alphabet-2.jpg"
+            alt=""
+          />
+          <img
+            class="h-full w-[23%]"
+            src="https://www.theapexgroup.in/images/alphabet/apex-alphabet-3.jpg"
+            alt=""
+          />
+          <img
+            class="h-full w-[23%]"
+            src="https://www.theapexgroup.in/images/alphabet/apex-alphabet-4.jpg"
+            alt=""
+          />
+          <img
+            class="h-full w-[23%]"
+            src="https://www.theapexgroup.in/images/alphabet/apex-alphabet-5.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section class="bg-[#141414] py-5">
+        <div id="trigger"
+          class="md:h-[70vh] space-y-10 px-[10vw] lg:px-[20vw] justify-center items-center text-center flex flex-col text-white"
+        >
+          <h1 class="property text-3xl">PROPERTY DESCRIPTION</h1>
+          <p class="left text-base text-[#c4c4c4]">
+            Founded over three dcades ago, Apex Group is India's leading real
+            estate developer in the national capital region. Having delivered
+            multiple uber-luxury projects, the realty major has raised the bar
+            in architectural representation and comfortable living.
+          </p>
+          <p class="left text-base text-[#c4c4c4]">
+            Alphabet, Greater Noida, is another premium housing project by the
+            Apex Group, beautifully crafted 3 and 4 BHK apartments with superior
+            amenities, dedicated green space and round-the-clock security. The
+            tower offers spectacular views of the city, ample natural light and
+            cross ventilation.
+          </p>
+          <p class="left text-base text-[#c4c4c4]">
+            Among other features of Apex Alphabet are badminton court, a
+            temperature-controlled indoor pool, a fitness centre, a jogging
+            track, an outdoor play area, and a clubhouse
+          </p>
+          <button class="w-fit bg-[#c4975c] py-1 rounded-full px-8">
+            Download Brochure
+          </button>
+        </div>
+        <div class="py-12 flex items-center justify-around flex-col">
+          <h1 class="property text-3xl mb-6 text-white">WALKTHROUGH</h1>
+          <iframe
+            id="youtube"
+            class="w-3/4 lg:w-7/12"
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/w8gr4KqqCyY?si=De7vqayoJbnzk-zD"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section
+        class="md:h-[45vh] text-3xl leading-relaxed md:font-semibold md:px-[5vw] lg:px-[15vw] text-center flex items-center text-[#cccccc] bg-[url(https://www.theapexgroup.in/images/swimmingPoolBg.jpg)]"
+      >
+        Apex Alphabet Greater Noida West is richly being built with hi-tech
+        civil technologies, which is offering 2, 3 & 4 BHK ultra modern
+        residential apartments ranging from 998 sq. ft. to 1830 sq. feet.
+      </section>
+      <section id="projecttrigger"
+        class="md:h-screen bg-[#141414] flex flex-col items-center justify-evenly text-[#cecece]"
+      >
+        <div id='project'class="text-3xl py-10">PROJECT HIGHLIGHTS</div>
+        <div class="flex flex-col md:flex-row justify-between w-[90vw] lg:w-[70vw]">
+          <div id="left" class="md:w-[48%]">
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                1
+              </div>
+              <div class="w-4/5">2, 3 & 4 BHK Luxurious Apartments</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                2
+              </div>
+              <div class="w-4/5">Wild Sizes 998 - 1830 fq. ft.</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                3
+              </div>
+              <div class="w-4/5">Club House, Equipped with Swimming Pool and other Facilities</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                4
+              </div>
+              <div class="w-4/5">Spacious Covered Car Parking</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                5
+              </div>
+              <div class="w-4/5">Central Auditorium</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                6
+              </div>
+              <div class="w-4/5">Leading Schools & Hospital in close vicinity</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                7
+              </div>
+              <div class="w-4/5">Efficient Power Distribution Network and 24hrs Power Backup</div>
+            </div>
+          </div>
+          <div id="right" class="md:w-[48%]">
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                8
+              </div>
+              <div class="w-4/5">Rechargeable Pits for Rainwater Harvesting</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                9
+              </div>
+              <div class="w-4/5">7 Acres Project & Corner Plot</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                10
+              </div>
+              <div class="w-4/5">High Speed Lifts</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                11
+              </div>
+              <div class="w-4/5">Ultra Modern Amenities</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                12
+              </div>
+              <div class="w-4/5">Metro & Railway Connectivity</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                13
+              </div>
+              <div class="w-4/5">Prime Location Sidharth Vihar, Indirapuram, NH-24</div>
+            </div>
+            <div class="bg-[#302f2f] rounded-l-full flex items-center p-1 my-3">
+              <div
+                class="w-10 flex items-center justify-center h-10 rounded-full bg-[#151515] mr-3"
+              >
+                14
+              </div>
+              <div class="w-4/5">Ample Green Cover and Landscaping</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="floortrigger"class="md:h-[80vh] bg-[#141414]">
+        <div id="floor" class="py-14 text-center text-white text-4xl">FLOOR PLAN</div>
+        <div class="flex items-center flex-wrap md:w-5/6 lg:w-3/4 mx-auto justify-between">
+          <img
+            class="transition-all hover:scale-110 md:w-[23%] mb-8 mx-1"
+            src="https://www.theapexgroup.in/images/alphabet/floor-plan.jpg"
+            alt=""
+          />
+          <img
+            class="transition-all hover:scale-110 md:w-[23%] mb-8 mx-1"
+            src="https://www.theapexgroup.in/images/alphabet/floor-plan-1.jpg"
+            alt=""
+          />
+          <img
+            class="transition-all hover:scale-110 md:w-[23%] mb-8 mx-1"
+            src="https://www.theapexgroup.in/images/alphabet/floor-plan-1.jpg"
+            alt=""
+          />
+          <img
+            class="transition-all hover:scale-110 md:w-[23%] mb-8 mx-1"
+            src="https://www.theapexgroup.in/images/alphabet/floor-plan-1.jpg"
+            alt=""
+          />
+          <img
+            class="transition-all hover:scale-110 md:w-[23%] mb-8 mx-1"
+            src="https://www.theapexgroup.in/images/alphabet/floor-plan-1.jpg"
+            alt=""
+          />
+        </div>
+      </section>
+      <section
+        class="h-[75vh] flex flex-col justify-center px-[5vw] md:px-[20vw] lg:px-[25vw] bg-[url(https://www.theapexgroup.in/images/swimmingPoolBg.jpg)]"
+      >
+        <div class="text-[#cecece] text-center text-2xl my-3">Enquiry Now</div>
+        <div class="text-[#cecece] text-center font-semibold my-3">
+          PLEASE DO NOT HESITATE TO SEND US A MESSAGE.
+        </div>
+        <input
+          class="text-[#cacaca] bg-[#313131] block my-2 w-full py-2 px-3 rounded"
+          type="text"
+          name=""
+          id=""
+          placeholder="your Name"
+        />
+        <input
+          class="text-[#cacaca] bg-[#313131] block my-2 w-full py-2 px-3 rounded"
+          type="email"
+          name=""
+          id=""
+          placeholder="Youir Email"
+        />
+        <input
+          class="text-[#cacaca] bg-[#313131] block my-2 w-full py-2 px-3 rounded"
+          type="text"
+          name=""
+          id=""
+          placeholder="Subject"
+        />
+        <textarea
+          class="text-[#cacaca] bg-[#313131] block my-2 w-full py-2 px-3 rounded"
+          name=""
+          id=""
+          cols="30"
+          rows="4"
+        ></textarea>
+        <input
+          type="submit"
+          value="SEND MESSAGE"
+          class="text-[#cacaca] font-semibold text-sm bg-[#947851] py-2 px-4 w-fit mx-auto my-3"
+        />
+      </section>
+      <section class="h-[70vh]">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d28028.120841300322!2d77.43033700000001!3d28.58432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cef8e98dcb9f3%3A0x24744542b36551a9!2sAPEX%20ALPHABET!5e0!3m2!1sen!2sin!4v1712319870071!5m2!1sen!2sin"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="w-full h-full"
+        ></iframe>
+      </section>
+    </main>
+    <footer
+      class="md:h-[75vh] py-5 relative flex flex-col items-center justify-evenly bg-[#141414]"
+    >
+      <h1
+        class="text-2xl font-bold border-b-2 border-[#5f5f5f54] text-[#f9f9f9] w-fit mx-auto"
+      >
+        FIND OUT MORE
+      </h1>
+      <div class="flex items-center flex-col md:flex-row justify-center w-full lg:w-3/4 mx-auto">
+        <div class="md:w-1/4 px-4 text-center text-[#cecece]">
+          <h2 class="py-4 text-xl">Key Contacts</h2>
+          <select
+            class="px-3 py-2 text-[#495057] rounded w-full"
+            name="location"
+            id="location"
+          >
+            <option value="Please Select">Please Select</option>
+            <option value="Indirapuram, Gaziabad">Indirapuram, Gaziabad</option>
+            <option value="Siddharth Vihar Gaziabad">
+              Siddharth Vihar Gaziabad
+            </option>
+          </select>
+        </div>
+        <div class="md:w-1/4 px-4 text-center text-[#cecece]">
+          <h2 class="py-4 text-xl">Address</h2>
+          <p>
+            526/1, Village kanawani, Ahinsa Khand-II, Indrapuram,
+            Ghaziabad,(U.P.) - 201014
+          </p>
+        </div>
+        <div class="md:w-1/4 px-4 text-center text-[#cecece]">
+          <h2 class="py-4 text-xl">Stay Informed</h2>
+          <div class="flex">
+            <input
+              class="py-2 px-3 w-full rounded"
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter Email Address"
+            />
+            <div class="bg-[#6c757d] px-3 py-1 cursor-pointer text-white">
+              Send
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="border-b-2 my-2 border-[#5f5f5f54] w-full md:w-3/4 mx-auto h-1"></div>
+      <div class="flex w-3/4 items-center flex-col md:flex-row justify-evenly">
+        <img
+          class="w-16 h-fit py-5"
+          src="https://www.theapexgroup.in/images/apex.png"
+          alt=""
+        />
+        <p class="text-[#cecece] w-10/12">
+          Apex Group is India's leading real estate development group, founded
+          28 years ago in the National Capital Region and since then has been
+          scalling new heights by each passing day. The company has set new
+          trends of architectural finesse in the contemporary global scenario
+          touching the horizons of excellence.
+        </p>
+      </div>
+    </footer>
+    <div class="bg-black text-white md:h-20 p-4 w-full flex-col items-center flex justify-around">
+      <div>Copyright © 2022 The Apex Groups. All rights reserved.</div>
+      <div class="flex items-center h-full">
+        <div class=" flex items-center justify-center bg-[#947851] mx-[2px] w-9  text-center p-1 h-9">
+          <i class="fa-brands fa-facebook"></i>
+        </div>
+        <div class=" flex items-center justify-center bg-[#947851] mx-[2px] w-9  text-center p-1 h-9">
+          <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class=" flex items-center justify-center bg-[#947851] mx-[2px] w-9  text-center p-1 h-9">
+          <i class="fa-brands fa-youtube"></i>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/b43c7b4525.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+      function setHeightAccordingToWidth() {
+        var container = document.getElementById("youtube");
+        var width = container.offsetWidth;
+        var aspectRatio = 9 / 16; // Change this according to your aspect ratio
+
+        container.style.height = width * aspectRatio + "px";
+      }
+
+      // Call the function initially
+      setHeightAccordingToWidth();
+
+      // Update height whenever window is resized
+      window.addEventListener("resize", setHeightAccordingToWidth);
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
