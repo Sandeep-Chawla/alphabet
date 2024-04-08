@@ -83,11 +83,12 @@ $("#menu").click(()=>{
 
 }
 )
-$("#drio").click(()=>{
-    $("#drio-menu").toggle()
-    $('#about-menu').hide()
+
+$("#about").hover(()=>{
+  $("#about-menu").toggle()
 })
-$("#about").click(()=>{
-    $('#about-menu').toggle()
-    $("#drio-menu").hide()
+$("#drio").hover(()=>{
+  $("#drio-menu").toggle()
 })
+
+
